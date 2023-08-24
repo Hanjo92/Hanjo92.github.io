@@ -8089,6 +8089,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-green {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
@@ -8104,8 +8109,8 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.text-reset {
-  --bs-text-opacity: 1;
+.text-reset 
+{  --bs-text-opacity: 1;
   color: inherit !important;
 }
 
@@ -11009,7 +11014,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 188, 156, 0.8);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11029,6 +11034,45 @@ html {
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.github .github-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.github .github-item .github-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.github .github-item .github-item-caption:hover {
+  opacity: 1;
+}
+.github .github-item .github-item-caption .github-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.github-modal .btn-close {
+  color: #ffff9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.github-modal .github-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .github-modal .github-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
